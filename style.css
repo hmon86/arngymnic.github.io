@@ -10,7 +10,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: url(imagenes/backg.jpg) center; 
+    background: url(imagenes/backg.jpg); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
     cursor: url("/imagenes/pesarusa.png") 0 0, auto; 
     a{
         cursor: url("/imagenes/hand.png") 0 0, auto; 
