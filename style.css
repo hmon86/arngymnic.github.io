@@ -414,7 +414,8 @@ img:hover {
 .galeria .fila .col img{
     width: 100%;
     display: block; 
-    border: 5px solid #fff;
+    border: 2px solid #fff; 
+    margin-bottom: -4px;
 }
 /* *********** */
 /* UBICAION */
