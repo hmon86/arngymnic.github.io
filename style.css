@@ -83,7 +83,7 @@ body{
     background-position: center center;
     color: #bababa;
     position: relative; 
-    border: 0.2px solid #fff;
+    /*border: 0.2px solid #fff;*/
 }
 .inicio .contenido-seccion{
     max-width: 900px;
@@ -242,7 +242,7 @@ img:hover {
     margin: auto;
     padding: 0 20px; 
     height: 90vh; /*alto de la seccion*/ 
-    border: 0.2px solid #fff;
+    /*border: 0.2px solid #fff;*/
 }
 .servicios .contenido-seccion .fila{
     max-width: 1000px; 
@@ -381,7 +381,8 @@ img:hover {
     background-size: cover;
     background-position: center center;
     padding: 100px 0;  
-    border: 0.2px solid #fff;
+    margin-bottom: 220px;    
+    /*border: 0.2px solid #fff;*/
 }
 .galeria .contenido-seccion{
     max-width: 1100px; 
@@ -490,7 +491,7 @@ img:hover {
     background-size: cover;
     background-position: center center;
     padding: 100px 20px; 
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
 
 }
 .contacto .contenido-seccion{
