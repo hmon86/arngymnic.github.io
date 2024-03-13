@@ -2,41 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta
+    name="description"
+    content=" Esta es una pagina de informacion general para gym"/>
+    <meta name="keywords" content="HTML" />
+    <meta name="author" content=" Ing.Hector David Montoya Midence" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" type ="img/x-icon" href="/imagenes/fa.png">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
-        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0"/>
-    </svg> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css"> 
     <title>ArnGymNic</title> 
 
 
 </head>
-<body> 
+<body>   
+
+    <main>
+
+<!--Clases para indicar la resolución de cada dispositivo en JQ-->
+    <div class="resolucion">
+        <div class="desktop">
+            
+        </div>
+        <div class="tablet">
+
+        </div>
+        <div class="movil">
+        
+        </div>
+    </div>
+
     <!-- MENU -->
     <div class="contenedor-header">
         <header>
-            <h1>Arn_Gym<span class="txt">_Nic</span></h1>
+            <div class="logo">
+                <img src="/imagenes/logo.jpg" alt="Logo" style="width:100px;height:70px;">
+            </div>
+            <h1>Arnold<span class="txt"> Gym</span></h1>
             <nav id="nav">
-                <a href="#inicio" onclick="seleccionar()">Inicio</a>
-                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
-                <a href="#servicios" onclick="seleccionar()">Servicios</a>
-                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
-                <a href="#galeria" onclick="seleccionar()">Galería</a>
-                <a href="#equipo" onclick="seleccionar()">Equipo</a>
-                <a href="#contacto" onclick="seleccionar()">Contacto</a>
+                <a href="#inicio"  target="_blank">Inicio</a>
+                <a href="#nosotros" target="_blank">Nosotros</a>
+                <a href="#comodidades" target="_blank">Comodidades</a>
+                <a href="#galeria" target="_blank">Galería</a>
+                <a href="#mapa" target="_blank">Mapa</a>
+                <a href="#contacto" target="_blank">Contacto</a>
             </nav>
             <div class="redes">
-                <a href="https://www.facebook.com/Arnoldsgym2015/about_details"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://wa.me/50583918261"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/Arnoldsgym2015/about_details" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://wa.me/50583918261" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/hectormontoya8241/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
             </div>
             <!-- Icono del menu responsive -->
             <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
-            </div>                
+            </div>
         </header>
     </div> 
 
@@ -46,22 +66,29 @@
         <div class="contenido-seccion">
             <div class="info">
                 <h2>Piensa en <span class="txt">Grande</span></h2>
-                <!--<p></p>-->
-                
-                <a href="#nosotros" class="btn">
-                    <i class="bi bi-arrow-down-square-fill"></i>
-                </a>
+                <h4>«No prestes atención a los que digan que algo no se puede hacer»</h4>
             </div>
             
             </div>
+        </div> 
+
+    <!--Video en seccion inicio-->
+        --<div class="miVideo">
+            <video muted autoplay loop>
+                <source src="./video.assets/Clipchamp.mp4" type="video/mp4">
+            </video>
         </div>
-    </section>
+        
+        <div class="capa"></div> 
+
+    </section> 
+
 
     <!-- SECCION NOSOTROS -->
     <section id="nosotros" class="nosotros">
         <div class="fila">
             <div class="col">
-                <img src="imagenes/logo.jpg" alt="">
+                <img src="imagenes/logo.jpg" alt="Logo">
             </div> 
 
             <div class="col">
@@ -74,8 +101,9 @@
                         <h2 span class="txtRojo"></span>NOSOTROS</h2>
                     </div>
                 </div>
-                <p class="p-especial">Somos un gimnasio enfocado en atencion al cliente.</p>
-                <p class="p-especial">Ofrecemos rutinas de entrenamiento como fitness, bodybullding, powerlifting y mas.</p> 
+                <p class="p-especial">[|━|] Somos un gimnasio enfocado en atención al cliente.</p>
+                <p class="p-especial">[|━|] Ofrecemos rutinas de entrenamiento como fitness, bodybuilding, powerlifting y mas.</p> 
+                <p class="p-especial"> [|━|] Nuestra misión es brindar a nuestros miembros una salud física y mental de calidad.</p>
             </div>
         </div>
         
@@ -83,77 +111,16 @@
             <div class="col1"> 
                 
             </div>
-            <div class="col2">
-                <!--<button>PASE LIBRE</button>-->
-            </div>
+            
         </div>
-    </section>
+    </section> 
 
-    <!-- SECCION SERVICIOS -->
-    <section class="servicios" id="servicios">
-        <div class="contenido-seccion">
-            <div class="fila">
-                <div class="col">
-                    <div class="contenedor-titulo">
-                        <div class="info">
-                            <h2>SERVICIOS</h2>
-                        </div>
-                    </div>
-                    <p class="p-especial">Le proporcionamos rutinas para entrenamiento fitness.
-                    </p>
-                    <p class="p-especial">Entrenamiento funcional y cardio para bajar de peso.</p>
-                    <p class="p-especial">Les ofrecemos rutinas personalizadas para alcanzar objetivos.</p>
-                </div>
-                <div class="col">
-                    <img src="imagenes/servicios.jpg" alt="Servicios">
-                </div>
-            </div>
-        </div>
-        <div class="info-servicios">
-            <!--<table>
-                <tr>
-                    <td>
-                        <i class="fa-solid fa-person-walking"></i>
-                        <h3><span class="txtRojo">Clases </span> de Fitness</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-dumbbell"></i>
-                        <h3><span class="txtRojo">Clases </span> de Crossfit</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-mitten"></i>
-                        <h3><span class="txtRojo">Clases </span> de Boxeo</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fa-solid fa-clock"></i>
-                        <h3><span class="txtRojo">Clases </span> de Enduro</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-heart-circle-bolt"></i>
-                        <h3><span class="txtRojo">Clases </span> de Cardio</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
-                    </td>
-                    <td>
-                        <i class="fa-solid fa-bicycle"></i>
-                        <h3><span class="txtRojo">Clases </span> de Ciclismo</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis.</p>
-                    </td>
-                </tr>
-            </table>-->
-        </div>
-    </section>
 
     <!-- SECCION COMODIDADES -->
     <section id="comodidades" class="comodidades">
         <div class="fila">
             <div class="col">
-                <img src="imagenes/gym.jpg" alt="Gym">
+                <img src="/imagenes/servicios.jpg" alt="Gym">
             </div>
             <div class="col">
                 <div class="contenedor-titulo">
@@ -161,45 +128,48 @@
                     </div>
                     <div class="info">
                         <span class="frase"></span>
-                        <h2>Instalaciones</h2>
+                        <h2>Comodidades</h2>
                     </div>
                 </div>
-                <p class="p-especial">OFRECEMOS UN GIMNASIO LIMPIO Y DE AMBIENTE AGRADABLE.</p>
+                <p class="p-especial">[|━|] OFRECEMOS UN GIMNASIO LIMPIO Y DE AMBIENTE AGRADABLE COMO:</p>
                 <ul>
-                    <li><span>VENTILACION ADECUADA</span> - Contamos con abanicos y ventanas amplias para una buena ventilacion.</li>
-                    <li><span>LOCAL UBICADO EN ZONA RESIDENCIAL SEGURA</span> - El gimnasio esta ubicado dentro de un residencial y cierra hasta tarde.</li>
-                    <li><span>ESTACIONAMIENTO</span> - Tenemos un area de estacionamiento pequeña y segura. </li>
+                    <span>VENTILACION ADECUADA</span> : Contamos con abanicos y ventanas amplias para una buena. <br><br>
+                    <span>LOCAL UBICADO EN ZONA RESIDENCIAL SEGURA</span> - El gimnasio esta ubicado dentro de un residencial y cierra hasta tarde. <br><br>
+                    <span>ESTACIONAMIENTO</span>Tenemos un area de estacionamiento pequeña y segura. <br>
                 </ul>
             </div>
         </div>
     </section>
 
+
     <!-- SECCION GALERIA -->
     <section class="galeria" id="galeria">
         <div class="contenido-seccion">
             <div class="contenedor-titulo">
-                <div class="">
             
-                </div>
                 <div class="info">
                     <span class="frase"></span>
-                    <h2>GALERIA</h2>
+                    <h2>GALERIA &#128248;</h2>
+                </div>
+            </div>  
+
+
+            <div class="fila">
+                <div class="col"> 
+                    
+                    <div class="grid-item"><img src="imagenes/foto1.jpg"  style="width: 100%" alt=""></div>
+                    
+                </div>
+                <div class="col">
+                    <img src="imagenes/foto2.jpg"  style="width: 100%" alt="">
+                </div>
+                <div class="col">
+                    <img src="imagenes/foto3.jpg"  style="width: 100%"   alt="">
                 </div>
             </div>
             <div class="fila">
                 <div class="col">
-                    <img src="imagenes/foto1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="imagenes/foto2.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="imagenes/foto3.jpg" alt="">
-                </div>
-            </div>
-            <div class="fila">
-                <div class="col">
-                    <img src="imagenes/foto4.jpg" style="width: 100%" height="102%" alt="">
+                    <img src="imagenes/foto4.jpg"  style="width: 100%" height="102%" alt="">
                 </div>
                 <div class="col">
                     <img src="imagenes/foto5.jpg" style="width: 100%" height="102%" alt="">
@@ -207,43 +177,90 @@
                 <div class="col">
                     <img src="imagenes/foto6.jpg" style="width: 100%" height="102%" alt="">
                 </div>
-            </div>
+            </div> 
 
-                 <div class="fila">
+            <div class="fila">
                 <div class="col">
-                    <img src="/IMG-20240212-WA0007.jpg"  style="width: 100%" height="102%" alt="">
+                    <img src="/imagenes/IMG-20240212-WA0007.jpg"  style="width: 100%" height="102%" alt="">
                 </div>
                 <div class="col">
-                    <img src="/IMG-20240212-WA0010.jpg" style="width: 100%" height="102%" alt="">
+                    <img src="/imagenes/IMG-20240212-WA0010.jpg" style="width: 100%" height="102%" alt="">
                 </div>
                 <div class="col">
-                    <img src="/grupo.jpg" style="width: 100%" height="102%" alt="">
+                    <img src="/imagenes/grupo.jpg" style="width: 100%" height="102%" alt="">
                 </div>
             </div>
         </div> 
-            
-        </div>
-    </section>
-    
-    <!-- SECCION CONTACTO -->
-    <section class="equipo" id="equipo">
+    </div>
+    </section> 
+
+    <!--SECCION VIDEO CON JAVASCRIPT-->
+<section> 
+    <br>
+    <h1 class="video">🎬VIDEO</h1>
+<div style="text-align:center">
+        <video id="video1" width="800" height="400">
+            <source src="/video.assets/video1.mp4" type="video/mp4">
+            <source src="/video.assets/video1.ogg" type="video./ogg">
+        </video> 
+        <br><br>
+
+    <div class="boton">
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>   
+    </div>
+</div>  
+
+
+
+    <script> 
+        var myVideo = document.getElementById("video1"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 850; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 310; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 600;
+        } 
+        </script> 
+</section> 
+<br> 
+<br> 
+
+
+    <!-- SECCION UBICACION -->
+    <section class="mapa" id="mapa">
         <div class="contenido-seccion">
             <div class="contenedor-titulo">
-                <div class="">
                 
-                </div>
                 <div class="info">
                     <span class="frase"></span>
-                    <h2>Ubicacion</h2>
+                    <h2>Mapa &#128205;</h2>
                 </div>
             </div>
             <div class="fila">
                 <div class="fila"> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5551.481106131771!2d-86.18493765841883!3d12.15474152768364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fc0c18406533%3A0x6b12ea48b8183e95!2sArnold%20Gym!5e0!3m2!1sen!2sni!4v1704609198578!5m2!1sen!2sni" width="1050" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15601.510931562845!2d-86.18237567381152!3d12.154666650944925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73fc0c18406533%3A0x6b12ea48b8183e95!2sArnold%20Gym!5e0!3m2!1sen!2sni!4v1710182647298!5m2!1sen!2sni" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>    
             </div>
         </div>
-    </section>
+    </section> 
+    <br> 
+    <br>
 
     <!-- SECCION CONTACTO -->
     <section class="contacto" id="contacto">
@@ -252,22 +269,31 @@
                 <!-- <div class=""> -->
                 </div>
                 <div class="info">
-                    <!-- <span class="frase">LA MEJOR EXPERIENCIA</span> -->
-                    <h2>CONTACTO</h2>
+                    
+                    <h2>CONTACTO 💬</h2>
                 </div>
             </div>
-            <div class="fila">
-                <div class="col">
-                    <input type="text"  placeholder="Ingrese Email">
-                </div>
-                <div class="col">
-                    <input type="text" placeholder="Ingrese Nombre">
-                </div>
-            </div>
-            <div class="mensaje">
-                <textarea name="" id="" cols="10" rows="05" placeholder="Ingresa el Mensaje"></textarea>
-                <button>Enviar Mensaje</button>
-            </div>
+            <div class="container">
+                <section id="formblog" class="formblog">
+
+                <form action="mailto:hmon14@hotmail.com.com" method="GET" enctype="text/plain">
+              
+                  <label for="Name"><b>Nombre:</b></label>
+                  <input type="text" id="name" name="name"  title="Ingrese su nombre completo" required pattern="[A-Za-z\s]+" placeholder="Escribe tu nombre..">
+                  <label for="email"><b>Email:</b></label>
+              <input type="text" placeholder=" Escribe tu email.." name="email" id="email" title="Ingrese su email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+              
+                  </select>
+              
+                  <label for="subject"><b>Mensaje:</b></label>
+                  <textarea id="subject" name="subject" placeholder="Asunto.." style="height:100px"></textarea>
+                  
+              
+                  <input type="submit" value="Enviar">
+              
+                </form> 
+                
+                
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
@@ -293,7 +319,7 @@
 
     <footer>
         <div class="info">
-            <p>2024 - <span class="">Arnold GYM</span> Todos los derechos reservados</p>
+            <p>&#169 2024 - <span class="">Arnold GYM</span> Todos los derechos reservados</p>
             <div class="redes">
                 <a href="#">
                     <i class="fa-brands fa-facebook-f"></i>
@@ -310,6 +336,7 @@
             </div>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="app.js"></script> 
+</main>
 </body>
-</html>
+</html
