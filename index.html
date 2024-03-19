@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta
     name="description"
-    content=" Esta es una pagina de informacion general para gym"/>
+    content=" Esta es una pagina de informacion general en pagina gym"/>
     <meta name="keywords" content="HTML" />
     <meta name="author" content=" Ing.Hector David Montoya Midence" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" type ="img/x-icon" href="/imagenes/fa.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="/style.css"> 
     <title>ArnGymNic</title> 
 
 
@@ -41,12 +41,12 @@
             </div>
             <h1>Arnold<span class="txt"> Gym</span></h1>
             <nav id="nav">
-                <a href="#inicio"  target="_blank">Inicio</a>
-                <a href="#nosotros" target="_blank">Nosotros</a>
-                <a href="#comodidades" target="_blank">Comodidades</a>
-                <a href="#galeria" target="_blank">Galería</a>
-                <a href="#mapa" target="_blank">Mapa</a>
-                <a href="#contacto" target="_blank">Contacto</a>
+                <a href="#inicio"  onclick="seleccionar()">Inicio</a>
+                <a href="#nosotros" onclick="seleccionar()">Nosotros</a>
+                <a href="#comodidades" onclick="seleccionar()">Comodidades</a>
+                <a href="#galeria" onclick="seleccionar()">Galería</a>
+                <a href="#mapa" onclick="seleccionar()">Mapa</a>
+                <a href="#contacto" onclick="seleccionar()">Contacto</a>
             </nav>
             <div class="redes">
                 <a href="https://www.facebook.com/Arnoldsgym2015/about_details" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -67,21 +67,26 @@
             <div class="info">
                 <h2>Piensa en <span class="txt">Grande</span></h2>
                 <h4>«No prestes atención a los que digan que algo no se puede hacer»</h4>
-            </div>
-            
-            </div>
-        </div> 
+            </div> 
 
-    <!--Video en seccion inicio-->
-        --<div class="miVideo">
+        </div>  
+        
+
+    <!--VIDEO-->
+        <div class="miVideo">
             <video muted autoplay loop>
                 <source src="./video.assets/Clipchamp.mp4" type="video/mp4">
             </video>
         </div>
         
-        <div class="capa"></div> 
+        <div class="capa"></div>  
 
     </section> 
+
+    <div>
+        <a href="https://es.wikipedia.org/wiki/Culturismo" target="_blank"><button class="boton"><span>MAS</span></button></a>
+    </div>
+
 
 
     <!-- SECCION NOSOTROS -->
@@ -180,8 +185,11 @@
             </div> 
 
             <div class="fila">
+                <!-- <div class="col">
+                    <img src="/imagenes/IMG-20240212-WA0007.jpg"  style="width: 100%" height="102%" alt="">
+                </div> -->
                 <div class="col">
-                    <img src="/imagenes/IMG-20240212-WA0009.jpg" style="width: 100%" height="102%" alt="">
+                    <img src="/imagenes/IMG-20240212-WA0010.jpg" style="width: 100%" height="102%" alt="">
                 </div>
                 <div class="col">
                     <img src="/imagenes/grupo.jpg" style="width: 100%" height="102%" alt="">
@@ -233,11 +241,11 @@
         function makeNormal() { 
             myVideo.width = 600;
         } 
-        </script> 
+        </script>
 </section> 
 <br> 
 <br> 
-
+<p style="color:#bababa; text-align: center; font-size: 25px;"><span> &#128242;Selecciona el tamaño del video segun tu dispositivo.</span></p>
 
     <!-- SECCION UBICACION -->
     <section class="mapa" id="mapa">
@@ -263,8 +271,7 @@
     <section class="contacto" id="contacto">
         <div class="contenido-seccion">
             <div class="contenedor-titulo">
-                <!-- <div class=""> -->
-                </div>
+            </div>
                 <div class="info">
                     
                     <h2>CONTACTO 💬</h2>
@@ -274,23 +281,21 @@
                 <section id="formblog" class="formblog">
 
                 <form action="mailto:hmon14@hotmail.com.com" method="GET" enctype="text/plain">
-              
-                  <label for="Name"><b>Nombre:</b></label>
-                  <input type="text" id="name" name="name"  title="Ingrese su nombre completo" required pattern="[A-Za-z\s]+" placeholder="Escribe tu nombre..">
-                  <label for="email"><b>Email:</b></label>
-              <input type="text" placeholder=" Escribe tu email.." name="email" id="email" title="Ingrese su email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-              
-                  </select>
-              
-                  <label for="subject"><b>Mensaje:</b></label>
-                  <textarea id="subject" name="subject" placeholder="Asunto.." style="height:100px"></textarea>
-                  
-              
-                  <input type="submit" value="Enviar">
-              
+            
+                <label for="Name"><b>Nombre:</b></label>
+                <input type="text" id="name" name="name"  title="Ingrese su nombre completo" pattern="[A-Za-z\s]+" placeholder="Escribe tu nombre.." required>
+                <label for="email"><b>Email:</b></label>
+                <input type="text" name="email" id="email" title="Ingrese su @email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder=" Escribe tu email.." required>
+                </select>
+            
+                <label for="subject"><b>Mensaje:</b></label>
+                <textarea id="subject" name="subject" placeholder="Asunto.." style="height:100px"></textarea>
+                
+                <input type="submit" value="Enviar">
+            
                 </form> 
                 
-                
+                <!--Iconos indicadores-->
             <div class="fila-datos">
                 <div class="col">
                     <i class="fa-solid fa-location-dot"></i>
