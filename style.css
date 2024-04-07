@@ -479,6 +479,7 @@ input[type=submit]:hover {
   font-size: 20px; 
   background: transparent;
   backdrop-filter: blur(20px);
+  border: #ccc 2px solid;
 }
 
 .contacto .fila-datos{
