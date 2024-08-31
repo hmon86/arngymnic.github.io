@@ -8,7 +8,11 @@
 
 html{
     scroll-behavior: smooth;
-}
+    margin: 0;  
+    padding: 0;  
+    overflow-x: hidden; /* Esto oculta el desbordamiento horizontal */  
+}  
+
 body{
     background: url(imagenes/backg.jpg); 
     background-size: cover; 
@@ -18,7 +22,11 @@ body{
     a{
         cursor: url("/imagenes/hand.png") 0 0, auto;  
     }  
-}
+    margin: 0;  
+    padding: 0;  
+    overflow-x: hidden; /* Esto oculta el desbordamiento horizontal */  
+}  
+
 /* ********************/
 /* ENCABEZADO - MENU */
 /* **************** */
