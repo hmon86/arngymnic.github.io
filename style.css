@@ -14,7 +14,7 @@ html{
 }  
 
 body{
-    background: url(imagenes/backg.jpg); 
+    background: url(imagenes/backg.jpg);
     background-size: cover; 
     background-attachment: fixed; 
     background-position: center; 
@@ -38,7 +38,7 @@ body{
     z-index: 99;
     padding: 0 20px; 
     background: transparent; 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 } 
 
 .logo{
@@ -170,39 +170,14 @@ body{
 } 
 
 
-.boton span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .boton span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .boton:hover span {
-    padding-right: 25px;
-  }
-  
-  .boton:hover span:after {
-    opacity: 2;
-    right: 0;
-  }
-
 /* *********** */
 /* SECCION NOSOTROS */
 /* *********** */
 .nosotros {
     max-width: 1050px; 
     margin: auto;
-    height: 102vh; 
-    padding: 100px 20px; 
+    height: 100vh; 
+    padding: 150px 20px; 
     color: #bababa; 
 }   
 
@@ -210,19 +185,28 @@ body{
 
 img {
     margin:auto;  
-    transition: 2s; 
+    transition: 0.5s; 
 } 
 
 img:hover {  
-    transform: scale(1.1);
+    /*transform: scale(1.1);  //efecto anterior//
     transition: 2s; 
     border-radius:50%;
     -webkit-border-radius:50%;
     box-shadow: 0px 0px 15px 15px #30e204;
     -webkit-box-shadow: 0px 0px 15px 15px #39ff14;
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg)
+    -webkit-transform: rotate(360deg)*/ 
+    
+    .imagen-zoom {  
+        width: 100px; /* Ancho de la imagen */  
+        transition: transform .0s ease; /* Suaviza la transición */  
+    }   
 }
+
+    .imagen-zoom:hover {  
+        transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */  
+    }  
 
 .nosotros .fila{
     display: flex;
@@ -232,7 +216,8 @@ img:hover {
     width: 50%;
 }
 .nosotros .fila .col img{
-    width: 80%;
+    width: 60%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,15 +248,19 @@ img:hover {
 .nosotros .fila-nosotros h2{
     font-size: 2.5rem;  
     
-} 
+}  
 
+h2.txtRojo {
+    margin-top: 20px;  /*distancia entre la imagen y el texto*/
+
+}
 /* *********** */
 /* COMODIDADES */
 /* *********** */
 .comodidades{
     max-width: 1024px;
     margin: auto;
-    padding: 100px 20px; 
+    padding: 0px 0px 0px 0px; 
     background-color: rgba(17, 16, 16, 0.6), rgba(5, 6, 8, 0.7); 
     
 }
@@ -286,11 +275,12 @@ img:hover {
     
 }
 .comodidades .fila .col img{
-    width: 95%; 
+    width: 90%; 
     height: 90%;
     display: block;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
+    padding-right: 20px;
 }
 .comodidades .fila .col .contenedor-titulo{
     display: flex;
@@ -307,6 +297,7 @@ img:hover {
 .comodidades .fila .col .contenedor-titulo .info h2{
     color: #bababa;
     font-size: 45px;
+    padding-top: 20px;
 }
 .comodidades .fila .col p{
    margin-bottom: 10px;
@@ -331,7 +322,7 @@ img:hover {
     background-size: cover;
     background-position: center center;
     padding: 100px 0; 
-    margin-bottom: 40px; 
+    margin-bottom: 10px; 
     
 }
 .galeria .contenido-seccion{
@@ -486,9 +477,9 @@ input[type=submit]:hover {
   padding: 20px;
   font-size: 20px; 
   background: transparent;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px); 
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(231, 225, 225, 0.5);
 }
 
 .contacto .fila-datos{
@@ -680,3 +671,7 @@ header nav{
         margin-bottom: 10px;
     }
 }
+
+
+
+
